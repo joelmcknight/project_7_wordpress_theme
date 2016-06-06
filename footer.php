@@ -1,6 +1,33 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  	<h5>FOLLOW ON INSTAGRAM</h5>
+  	<div class="footerImages">
+  		<?php $image = get_field('flickity1'); ?>
+        <img src="<?php echo $image['sizes']['thumbnail'] ?> " alt="">
+  		<?php $image = get_field('flickity1'); ?>
+  		        <img src="<?php echo $image['sizes']['thumbnail'] ?> " alt="">
+  		<?php $image = get_field('flickity1'); ?>
+  		        <img src="<?php echo $image['sizes']['thumbnail'] ?> " alt="">
+  		<?php $image = get_field('flickity1'); ?>
+  		        <img src="<?php echo $image['sizes']['thumbnail'] ?> " alt="">
+  		<?php $image = get_field('flickity1'); ?>
+  		        <img src="<?php echo $image['sizes']['thumbnail'] ?> " alt="">
+  		<?php $image = get_field('flickity1'); ?>
+  		        <img src="<?php echo $image['sizes']['thumbnail'] ?> " alt="">
+  		<?php $image = get_field('flickity1'); ?>
+  		        <img src="<?php echo $image['sizes']['thumbnail'] ?> " alt="">
+  		<?php $image = get_field('flickity1'); ?>
+  		        <img src="<?php echo $image['sizes']['thumbnail'] ?> " alt="">	
+  	</div>
+    <div class="footer-bottom">
+	    <p>&copy; <?php echo date('Y'); ?>  All rights reserved</p>
+	    <div class="footerSocial">
+	    	<?php wp_nav_menu( array(
+	        'container' => false,
+	        'theme_location' => 'social'
+	      )); ?>
+	    </div>
+    </div>
   </div>
 </footer>
 

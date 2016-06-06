@@ -22,7 +22,8 @@ function theme_setup() {
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation'
+		'primary' => 'Primary Navigation',
+		'social' => 'Social Menu'
 	) );
 
 	/*
@@ -276,3 +277,5 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+// add_filter('show_admin_bar', '__return_false');

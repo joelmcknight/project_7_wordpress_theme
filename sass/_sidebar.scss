@@ -1,11 +1,87 @@
 .sidebar {
 	width: 30%;
 	float: left;
+	text-align: center;
 	ul {
 		margin: 0;
 		padding: 0;
 		li {
 			list-style: none;
 		}
+	}
+}
+
+.widget-title {
+	text-align: center;
+	padding-bottom: 15px;
+	font-size: 14px;
+	position:relative;
+}
+//below the blue lines on either side of 
+.sidebar ul li .widget-title:after {
+	content:" ";
+	background: #43C6CE;
+	bottom: 22px;
+    right: 30px;
+    position: absolute;
+    height: 1.5px;
+    width: 30px;
+    position: absolute;
+}
+
+.sidebar ul li .widget-title:before {
+	content:" ";
+	background: #43C6CE;
+	bottom: 22px;
+    left: 30px;
+    position: absolute;
+    height: 1.5px;
+    width: 30px;
+    position: absolute;
+}
+
+.sidebar ul .widget_recent_entries .widget-title:before {
+
+    left: 15px;
+ 
+}
+
+.sidebar ul .widget_recent_entries .widget-title:after {
+
+    right: 15px;
+  
+}
+
+.textwidget {
+	p {	
+		padding-top: 5px;
+		font-size: 12px;
+	}
+	img {
+		border-radius: 50%;  //crop this so its a perfect square
+		display: block;
+		margin:0 auto;
+		padding-bottom: 15px;
+	}
+	input {
+		margin:10px 0;
+		font-size: 10px;
+		text-align: center;
+		color:lightgrey;
+		// width:172px;
+		width:100%;
+		padding:10px;
+		border:2px solid #43C6CE;
+	}
+	button{
+		margin:0 0 10px 0;
+		border:none;
+		background-color: #43C6CE;
+		color:white;
+		font-size: 10px;
+		// width:172px;
+		width:100%;
+		padding:10px;
+
 	}
 }

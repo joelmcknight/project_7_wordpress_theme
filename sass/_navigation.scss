@@ -1,14 +1,45 @@
+.navWrapper {
+	display:flex;
+	justify-content:space-around;
+	padding: 30px;
+	border-bottom: 1px solid lightgray;
+}
+
+ul {
+	float:left;
+}
 ul.menu {
 	margin: 0;
 	padding: 0;
 	li {
 		display: inline;
-		margin-right: 10px;
+		font-size: 11px;
+		margin: 10px;
 		a {
-			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+			color: black;
+			// padding: 10px;
+			background: white;
+			// margin: 0;
+			&:hover {
+				color:rgba(67, 198, 206, 1.00);
+			}
 		}
 	}
+}
+//social media menu below
+ul#menu-social-media-menu {
+	margin-right:8%;
+	li{
+		margin: 5px;
+		a{
+			color:black;
+			background:white;
+			&:hover {
+				color:rgba(67, 198, 206, 1.00);
+			}
+		}
+	}
+}
+#menu-main-menu {
+	margin-left: 9%;
 }
