@@ -8,8 +8,8 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <script src="https://use.fontawesome.com/d6171cf1d3.js"></script>
-  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
-  <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@1.2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
 
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>
